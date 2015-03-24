@@ -34,19 +34,19 @@ dentro del servidor y las restricciones que quiera aplicar a los redireccionamie
 
 Todo aspecto referido a la configuración de la aplicación debe realizarse en el archivo:
 
-- app/config/config.php
+>app/config/config.php
 
 Todos los hooks de la aplicación deben realizarse en el archivo:
 
-- app/config/hook.php
+>app/config/hook.php
 
 Todos los enrutamientos de la aplicación deben realizarse en el archivo:
 
-- app/config/route.php
+>app/config/route.php
 
 Los módulos HMVC deben alojarse en:
  
-- app/modules/
+>app/modules/
 
 ###### Sugerencia para enlaces relativos y URL amigables:
 Para que su sistema se ajuste rápidamente a un entorno de url amigables, puede 
@@ -55,7 +55,6 @@ con el valor de base para las rutas relativas, y luego utilizar la misma en la
 etiqueta base de html dentro del head. Ejemplo:
 
 ```php
-    
     // usando .htaccess
     define('URLFRIENDLY', 'http://local.web/project/');
 
