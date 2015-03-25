@@ -30,6 +30,12 @@ composer install
 directorio raíz y modifique las líneas 4 y 5 de acuerdo a la ubicación del proyecto 
 dentro del servidor y las restricciones que quiera aplicar a los redireccionamientos.
 
+Puede realizar todos estos pasos juntos ejecutando la siguiente instrucción en la consola de comando:
+
+```
+composer create-project danielspk/tornadoskeletonapplicacion=1.0.3 /ruta/de/destino/de/proyecto
+```
+
 ### Configuración y Organización:
 
 Todo aspecto referido a la configuración de la aplicación debe realizarse en el archivo:
