@@ -1,5 +1,23 @@
 {
     "name": "danielspk/tornadoskeletonapplication",
+	"type": "project",
+	"description": "Aplicación esqueleto para el uso de Tornado-PHP",
+	"keywords": ["Tornado", "Tornado-PHP"],
+	"homepage": "http://tornado-php.com",
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Daniel M. Spiridione",
+			"email": "info@daniel-spiridione.com.ar",
+			"homepage": "http://daniel-spiridione.com.ar/",
+            "role": "Developer"
+        }
+    ],
+	"support": {
+		"email": "info@daniel-spiridione.com.ar",
+        "issues": "https://github.com/danielspk/TornadoSkeletonApplication/issues",
+        "source": "https://github.com/danielspk/TornadoSkeletonApplication"
+    },
     "require": {
         "php": ">=5.3.0",
         "danielspk/tornado" : "2.*",
