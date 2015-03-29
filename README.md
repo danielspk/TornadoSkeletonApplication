@@ -50,6 +50,10 @@ Todos los enrutamientos de la aplicación deben realizarse en el archivo:
 
 >app/config/route.php
 
+Todos los servicios inyectados de la aplicación deben realizarse en el archivo:
+
+>app/config/service.php
+
 Los módulos HMVC deben alojarse en:
  
 >app/modules/

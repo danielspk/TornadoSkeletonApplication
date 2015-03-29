@@ -99,6 +99,7 @@ require 'app/vendor/autoload.php';
 
 // se incluyen los componentes de la aplicación
 require 'app/config/config.php';
+require 'app/config/service.php';
 require 'app/config/route.php';
 require 'app/config/hook.php';
 

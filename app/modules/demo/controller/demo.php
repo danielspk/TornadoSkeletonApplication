@@ -14,7 +14,7 @@ class Demo extends Controller
      */
     public function index($param = null)
     {
-        echo 'Hola Mundo Tornado'.$param;
+        echo 'Hola Mundo Tornado' . $param;
     }
 
 }
