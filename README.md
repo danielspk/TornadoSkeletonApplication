@@ -66,6 +66,14 @@ para definir las configuraciones, servicios, ganchos y/o rutas que fueran espec�
 dicho entorno (las mismas sólo se incluirán cuando la aplicación se encuentre en entorno de 
 desarrollo: 'tornado_environment_development' === true) 
 
+#### Datos de prueba
+
+La aplicación esqueleto contiene una mínima configuración inicial (rutas, servicios, hooks, etc) a 
+modo de ejemplo.
+Todos los paquetes incluidos en "require-dev" del archivo de configuración de composer no son 
+obligatorios para el funcionamiento de Tornado. Agrege y/o elimine los paquetes que su aplicación 
+requiera.
+
 ###### Sugerencia para enlaces relativos y URL amigables:
 Para que su sistema se ajuste rápidamente a un entorno de url amigables, puede 
 definir, en el archivo de configuración, una constante llamada URLFRIENDLY 

@@ -20,8 +20,11 @@
     },
     "require": {
         "php": ">=5.3.0",
-        "danielspk/tornado" : "2.*@beta",
-        "filp/whoops" : "1.*"
+        "danielspk/tornado": "2.*@beta"
+    },
+    "require-dev": {
+        "filp/whoops": "1.*",
+        "symfony/var-dumper": "2.*"
     },
     "config": {
         "vendor-dir": "app/vendor"
