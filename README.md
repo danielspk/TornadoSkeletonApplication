@@ -33,7 +33,7 @@ dentro del servidor y las restricciones que quiera aplicar a los redireccionamie
 Puede realizar todos estos pasos juntos ejecutando la siguiente instrucción en la consola de comando:
 
 ```
-composer create-project danielspk/tornadoskeletonapplicacion=1.0.3 /ruta/de/destino/de/proyecto
+composer create-project danielspk/tornadoskeletonapplicacion=1.0.4 /ruta/de/destino/de/proyecto
 ```
 
 ### Configuración y Organización:
@@ -49,6 +49,10 @@ Todos los hooks de la aplicación deben realizarse en el archivo:
 Todos los enrutamientos de la aplicación deben realizarse en el archivo:
 
 >app/config/route.php
+
+Todos los servicios inyectados de la aplicación deben realizarse en el archivo:
+
+>app/config/service.php
 
 Los módulos HMVC deben alojarse en:
  

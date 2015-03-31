@@ -18,8 +18,8 @@ $app->hook('error', function () use ($app) {
 
     if ($app->config('tornado_environment_development') === true) {
 
-        $whoops = new \Whoops\Run;
-        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+        $whoops = $app->debug;
+        $whoops->pushHandler($app->debugHtml);
         $whoops->handleException($app->error());
 
     } else {
