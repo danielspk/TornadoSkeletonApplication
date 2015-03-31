@@ -1,7 +1,5 @@
 <?php
 
-$app = \DMS\Tornado\Tornado::getInstance();
-
 $app->hook('init', function () {
 
 });

@@ -1,7 +1,5 @@
 <?php
 
-$app = \DMS\Tornado\Tornado::getInstance();
-
 $app->register('debug', function () {
     return new \Whoops\Run;
 });

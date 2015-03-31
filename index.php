@@ -97,11 +97,22 @@
 // se incluye el autoload de clases
 require 'app/vendor/autoload.php';
 
-// se incluyen los componentes de la aplicación
-require 'app/config/config.php';
-require 'app/config/service.php';
-require 'app/config/route.php';
-require 'app/config/hook.php';
+// se instancia tornado
+$app = \DMS\Tornado\Tornado::getInstance();
 
-// se inicia el tornado
-\DMS\Tornado\Tornado::getInstance()->run();
+// se incluyen los componentes generales de la aplicación
+require 'app/config/config.php';
+require 'app/src/services.php';
+require 'app/src/routes.php';
+require 'app/src/hooks.php';
+
+// se incluyen los componentes de desarrollo de la aplicación
+if ($app->config('tornado_environment_development') === true) {
+    require 'app/config/config_dev.php';
+    require 'app/src/services_dev.php';
+    require 'app/src/routes_dev.php';
+    require 'app/src/hooks_dev.php';
+}
+
+// se inicia la aplicación
+$app->run();
