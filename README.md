@@ -33,7 +33,7 @@ dentro del servidor y las restricciones que quiera aplicar a los redireccionamie
 Puede realizar todos estos pasos juntos ejecutando la siguiente instrucción en la consola de comando:
 
 ```
-composer create-project danielspk/tornadoskeletonapplicacion=1.0.4 /ruta/de/destino/de/proyecto
+composer create-project danielspk/tornadoskeletonapplicacion=1.0.5 /ruta/de/destino/de/proyecto
 ```
 
 ### Configuración y Organización:
@@ -44,19 +44,35 @@ Todo aspecto referido a la configuración de la aplicación debe realizarse en e
 
 Todos los hooks de la aplicación deben realizarse en el archivo:
 
->app/config/hook.php
+>app/src/hooks.php
 
 Todos los enrutamientos de la aplicación deben realizarse en el archivo:
 
->app/config/route.php
+>app/src/route.php
 
 Todos los servicios inyectados de la aplicación deben realizarse en el archivo:
 
->app/config/service.php
+>app/src/services.php
 
 Los módulos HMVC deben alojarse en:
  
 >app/modules/
+
+#### Ambiente de desarrollo
+
+Dado que pueden existir definiciones que son exclusivas del ambiente de desarrollo, todos 
+los archivos antes mencionados tienen su par con el prefijo "_dev" en su parte posterior 
+para definir las configuraciones, servicios, ganchos y/o rutas que fueran específicas de 
+dicho entorno (las mismas sólo se incluirán cuando la aplicación se encuentre en entorno de 
+desarrollo: 'tornado_environment_development' === true) 
+
+#### Datos de prueba
+
+La aplicación esqueleto contiene una mínima configuración inicial (rutas, servicios, hooks, etc) a 
+modo de ejemplo.
+Todos los paquetes incluidos en "require-dev" del archivo de configuración de composer no son 
+obligatorios para el funcionamiento de Tornado. Agrege y/o elimine los paquetes que su aplicación 
+requiera.
 
 ###### Sugerencia para enlaces relativos y URL amigables:
 Para que su sistema se ajuste rápidamente a un entorno de url amigables, puede 
