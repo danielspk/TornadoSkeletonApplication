@@ -33,7 +33,7 @@ dentro del servidor y las restricciones que quiera aplicar a los redireccionamie
 Puede realizar todos estos pasos juntos ejecutando la siguiente instrucción en la consola de comando:
 
 ```
-composer create-project danielspk/tornadoskeletonapplicacion=1.0.5 /ruta/de/destino/de/proyecto
+composer create-project danielspk/tornadoskeletonapplicacion /ruta/de/destino/de/proyecto 1.*
 ```
 
 ### Configuración y Organización:
