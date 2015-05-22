@@ -42,7 +42,7 @@ Todo aspecto referido a la configuración de la aplicación debe realizarse en e
 
 >app/config/config.php
 
-Todos los hooks de la aplicación deben realizarse en el archivo:
+Todos los hooks/eventos de la aplicación deben realizarse en el archivo:
 
 >app/src/hooks.php
 
