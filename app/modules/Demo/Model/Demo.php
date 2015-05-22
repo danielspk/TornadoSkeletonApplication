@@ -1,5 +1,5 @@
 <?php
-namespace app\modules\Demo\Model;
+namespace App\Modules\Demo\Model;
 
 class Demo
 {

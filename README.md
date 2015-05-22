@@ -18,15 +18,15 @@ https://getcomposer.org/download/
 
 Instalación:
 
-1. Descarge la aplicación esqueleto desde: https://github.com/danielspk/TornadoSkeletonApplication
+* Descarge la aplicación esqueleto desde: https://github.com/danielspk/TornadoSkeletonApplication
 
-2. Inicie la consola de comando y ejecute el siguiente comando:
+* Inicie la consola de comando y ejecute el siguiente comando:
 
 ```
 composer install
 ```
 
-3. En caso de querer utilizar URL amigables edite el archivo .htaccess del 
+* En caso de querer utilizar URL amigables edite el archivo .htaccess del 
 directorio raíz y modifique las líneas 4 y 5 de acuerdo a la ubicación del proyecto 
 dentro del servidor y las restricciones que quiera aplicar a los redireccionamientos.
 
