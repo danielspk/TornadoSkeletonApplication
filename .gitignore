@@ -1,4 +1,4 @@
 /.idea/
-/app-temp/modules/serialized.php
-/app-temp/vendor/
+/app/modules/serialized.php
+/app/vendor/
 /composer.lock
