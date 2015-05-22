@@ -16,8 +16,8 @@ $app->hook('error', function () use ($app) {
 
     if ($app->config('tornado_environment_development') === true) {
 
-        $whoops = $app->debug;
-        $whoops->pushHandler($app->debugHtml);
+        $whoops = $app->container('debug');
+        $whoops->pushHandler($app->container('debugHtml'));
         $whoops->handleException($app->error());
 
     } else {

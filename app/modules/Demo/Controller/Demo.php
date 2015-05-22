@@ -1,5 +1,5 @@
 <?php
-namespace app\modules\demo\controller;
+namespace App\Modules\Demo\Controller;
 
 use \DMS\Tornado\Controller;
 
@@ -9,12 +9,12 @@ class Demo extends Controller
      * Ejemplo de enrutamientos mediante anotaciones
      *
      * @param mixed $param
-     * @T_ROUTE /demo/demo/index
+     * @T_ROUTE /demo/demo/index/:string
      * @T_ROUTE GET|POST /demo/otra/anotacion
      */
     public function index($param = null)
     {
-        echo 'Hola Mundo Tornado' . $param;
+        $this->app->render('App\\Modules\\Demo\\View\\demo.tpl.php' , ['param' => $param]);
     }
 
 }

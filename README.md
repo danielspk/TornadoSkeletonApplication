@@ -18,22 +18,22 @@ https://getcomposer.org/download/
 
 Instalación:
 
-1. Descarge la aplicación esqueleto desde: https://github.com/danielspk/TornadoSkeletonApplication
+* Descarge la aplicación esqueleto desde: https://github.com/danielspk/TornadoSkeletonApplication
 
-2. Inicie la consola de comando y ejecute el siguiente comando:
+* Inicie la consola de comando y ejecute el siguiente comando:
 
 ```
 composer install
 ```
 
-3. En caso de querer utilizar URL amigables edite el archivo .htaccess del 
+* En caso de querer utilizar URL amigables edite el archivo .htaccess del 
 directorio raíz y modifique las líneas 4 y 5 de acuerdo a la ubicación del proyecto 
 dentro del servidor y las restricciones que quiera aplicar a los redireccionamientos.
 
 Puede realizar todos estos pasos juntos ejecutando la siguiente instrucción en la consola de comando:
 
 ```
-composer create-project danielspk/tornadoskeletonapplicacion=1.0.5 /ruta/de/destino/de/proyecto
+composer create-project danielspk/tornadoskeletonapplicacion /ruta/de/destino/de/proyecto 1.*
 ```
 
 ### Configuración y Organización:
@@ -42,7 +42,7 @@ Todo aspecto referido a la configuración de la aplicación debe realizarse en e
 
 >app/config/config.php
 
-Todos los hooks de la aplicación deben realizarse en el archivo:
+Todos los hooks/eventos de la aplicación deben realizarse en el archivo:
 
 >app/src/hooks.php
 

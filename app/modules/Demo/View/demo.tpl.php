@@ -6,5 +6,6 @@
 </head>
 <body>
     <h1>Tornado vista</h1>
+    <?php echo 'Hola Mundo Tornado ' . $param ?>;
 </body>
 </html>
